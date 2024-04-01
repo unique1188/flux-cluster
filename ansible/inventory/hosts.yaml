@@ -1,0 +1,25 @@
+---
+kubernetes:
+  children:
+    controllers:
+      hosts:
+        "k8s-1":
+          ansible_user: "homelab"
+          ansible_host: "192.168.20.11"
+        "k8s-2":
+          ansible_user: "homelab"
+          ansible_host: "192.168.20.12"
+        "k8s-3":
+          ansible_user: "homelab"
+          ansible_host: "192.168.20.13"
+    workers:
+      hosts:
+        "k8s-4":
+          ansible_user: "homelab"
+          ansible_host: "192.168.20.14"
+        "k8s-5":
+          ansible_user: "homelab"
+          ansible_host: "192.168.20.15"
+        "k8s-6":
+          ansible_user: "homelab"
+          ansible_host: "192.168.20.16"
